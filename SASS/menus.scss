@@ -1,0 +1,78 @@
+/*menus restaurants*/
+#imagerestau {
+  width: 100%;
+  height: 255px;
+
+  img {
+    width: inherit;
+  }
+}
+
+#cartemenu {
+  background-color: #eaeaea;
+  padding: 20px;
+  position: relative;
+  top: -40px;
+  border-radius: 30px 30px 0px 0px;
+
+  .nom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+}
+
+.unite {
+  background: white;
+  border-radius: 20px;
+  padding: 10px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .prix {
+    padding-top: 10px;
+  }
+}
+#menuall {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 30px;
+  align-items: CENTER;
+  .groupe {
+    grid-gap: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .titre {
+    width: 10%;
+    border-bottom: 3px solid #99e2d0;
+    margin-bottom: 10px;
+  }
+}
+.titre h1 {
+  h1 {
+    font-family: "Shrikhand", cursive;
+  }
+}
+.boutoncmd {
+  margin-top: 20px;
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  color: white;
+  border: none;
+  height: 50px;
+  width: 215px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  button {
+    background: none;
+    color: white;
+    font-size: medium;
+
+    border: none;
+  }
+}
