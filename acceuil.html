@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ohmyfood</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="SASS/main.css" />
     <script
       src="https://kit.fontawesome.com/2e25423d67.js"
       crossorigin="anonymous"
@@ -15,16 +15,15 @@
       href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
       rel="stylesheet"
     />
-
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <header>
+    <header class="headeracceuil">
       <!--START HEADER-->
-      <div id="logo">
+      <div class="headeracceuil__logo">
         <img src="images/ohmyfood@2x.svg" alt="logoohmyfood" />
       </div>
     </header>
@@ -33,14 +32,14 @@
     <main>
       <!--START MAIN-->
 
-      <section id="localisation">
+      <section class="localisation">
         <!--LOCALISATION-->
-        <div class="infos">
-          <div class="infos_iconemap">
+        <div class="localisation__infos">
+          <div class="localisation__infos__iconemap">
             <i class="fas fa-map-marker-alt"></i>
           </div>
-          <div class="lieu">
-            <input type="text" placeholder="Paris, Belleville" class="lieu" />
+          <div class="localisation__infos__iconemap__lieu">
+            <input type="text" placeholder="Paris, Belleville" />
           </div>
         </div>
       </section>
@@ -51,7 +50,7 @@
         <p>
           Découvrez des restaurants d'exception, sélectionnés par nos soins.
         </p>
-        <div class="boutonrestaurant">
+        <div class="boutoncmd">
           <button type="submit">Explorer nos restaurants</button>
         </div>
       </section>
@@ -61,40 +60,45 @@
         <h2>Fonctionnement</h2>
 
         <div class="parent">
-          <div class="parent_unit">
+          <div class="parent__unit">
             <button type="submit">
-              <div class="rond">
+              <div class="parent__unit__rond">
                 <p>1</p>
               </div>
-              <div class="icone2">
+              <div class="parent__unit__rond__icone2">
                 <i class="fas fa-mobile-alt"></i>
               </div>
-
-              <p>Choisissez un restaurant</p>
+              <div class="parent__unit__rond__icone2__p">
+                <p>Choisissez un restaurant</p>
+              </div>
             </button>
           </div>
 
-          <div class="unit">
+          <div class="parent__unit">
             <button type="submit">
-              <div class="rond">
+              <div class="parent__unit__rond">
                 <p>2</p>
               </div>
-              <div class="icone2">
+              <div class="parent__unit__rond__icone2">
                 <i class="fas fa-list-ul"></i>
               </div>
-              <p>Composez votre menu</p>
+              <div class="parent__unit__rond__icone2__p">
+                <p>Composez votre menu</p>
+              </div>
             </button>
           </div>
 
-          <div class="unit">
+          <div class="parent__unit">
             <button type="submit">
-              <div class="rond">
+              <div class="parent__unit__rond">
                 <p>3</p>
               </div>
-              <div class="icone2">
+              <div class="parent__unit__rond__icone2">
                 <i class="fas fa-store"></i>
               </div>
-              <p>Dégustez au restaurant</p>
+              <div class="parent__unit__rond__icone2__p">
+                <p>Dégustez au restaurant</p>
+              </div>
             </button>
           </div>
         </div>
@@ -104,70 +108,70 @@
         <!--SECTION RESTAURANTS-->
         <h2>Restaurants</h2>
         <div class="allrestau">
-          <div class="carte">
+          <div class="allrestau__carte">
             <a href="lapalettedugout.html">
-              <figure class="figure">
+              <figure class="allrestau__carte__image">
                 <img src="images/palettedugout.jpg" alt="La palette du goût" />
                 <h5 class="new">Nouveau</h5>
               </figure>
-              <figcaption class="legende">
-                <div class="titre">
+              <figcaption class="allrestau__carte__image__legende">
+                <div class="allrestau__carte__image__legende__titre">
                   <h4>La palette du goût</h4>
                   <p>Ménilmontant</p>
                 </div>
-                <div class="coeur">
+                <div class="allrestau__carte__image__legende__titre__coeur">
                   <i class="far fa-heart"></i>
                 </div>
               </figcaption>
             </a>
           </div>
 
-          <div class="carte">
+          <div class="allrestau__carte">
             <a href="lanoteenchantee.html">
-              <figure class="figure">
+              <figure class="allrestau__carte__image">
                 <img src="images/noteenchantee.jpg" alt="La note enchantée" />
                 <h5 class="new">Nouveau</h5>
               </figure>
-              <figcaption class="legende">
-                <div class="titre">
+              <figcaption class="allrestau__carte__image__legende">
+                <div class="allrestau__carte__image__legende__titre">
                   <h4>La note enchantée</h4>
                   <p>Charonne</p>
                 </div>
-                <div class="coeur">
+                <div class="allrestau__carte__image__legende__titre__coeur">
                   <i class="far fa-heart"></i>
                 </div>
               </figcaption>
             </a>
           </div>
 
-          <div class="carte">
+          <div class="allrestau__carte">
             <a href="alafrancaise.html">
-              <figure class="figure">
+              <figure class="allrestau__carte__image">
                 <img src="images/francaise.jpg" alt="A la française" />
               </figure>
-              <figcaption class="legende">
-                <div class="titre">
+              <figcaption class="allrestau__carte__image__legende">
+                <div class="allrestau__carte__image__legende__titre">
                   <h4>À la française</h4>
                   <p>Cité Rouge</p>
                 </div>
-                <div class="coeur">
+                <div class="allrestau__carte__image__legende__titre__coeur">
                   <i class="far fa-heart"></i>
                 </div>
               </figcaption>
             </a>
           </div>
 
-          <div class="carte">
+          <div class="allrestau__carte">
             <a href="ledelicedessens.html">
-              <figure class="figure">
+              <figure class="allrestau__carte__image">
                 <img src="images/delicedessens.jpg" alt="Le délice des sens" />
               </figure>
-              <figcaption class="legende">
-                <div class="titre">
+              <figcaption class="allrestau__carte__image__legende">
+                <div class="allrestau__carte__image__legende__titre">
                   <h4>Le délice des sens</h4>
                   <p>Folie-Méricourt</p>
                 </div>
-                <div class="coeur">
+                <div class="allrestau__carte__image__legende__titre__coeur">
                   <i class="far fa-heart"></i>
                 </div>
               </figcaption>
@@ -178,31 +182,32 @@
     </main>
     <!--END MAIN-->
 
-    <footer>
+    <footer class="footer">
       <!--START FOOTER-->
-      <div class="logo2">
+      <div class="footer__logo2">
         <img src="images/ohmyfood@2x.svg" alt="logoohmyfood" />
       </div>
-
-      <div class="ligne">
-        <div class="icone3">
-          <i class="fas fa-utensils"></i>
+      <div class="footer__logo2__containerligne">
+        <div class="footer__logo2__containerligne__ligne">
+          <div class="footer__logo2__containerligne__ligne__icone3">
+            <i class="fas fa-utensils"></i>
+          </div>
+          <p>Proposer un restaurant</p>
         </div>
-        <p>Proposer un restaurant</p>
-      </div>
 
-      <div class="ligne">
-        <div class="icone3">
-          <i class="fas fa-hands-helping"></i>
+        <div class="footer__logo2__containerligne__ligne">
+          <div class="footer__logo2__containerligne__ligne__icone3">
+            <i class="fas fa-hands-helping"></i>
+          </div>
+          <p>Devenir partenaire</p>
         </div>
-        <p>Devenir partenaire</p>
-      </div>
-      <div class="ligne">
-        <p>Mentions légales</p>
-      </div>
+        <div class="footer__logo2__containerligne__ligne">
+          <p>Mentions légales</p>
+        </div>
 
-      <div class="ligne">
-        <a href="mailto:nullepart@mozilla.org">Contact</a>
+        <div class="footer__logo2__containerligne__ligne">
+          <a href="mailto:nullepart@mozilla.org">Contact</a>
+        </div>
       </div>
     </footer>
   </body>
