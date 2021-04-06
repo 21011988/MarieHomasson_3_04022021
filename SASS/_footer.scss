@@ -1,0 +1,49 @@
+/*FOOTER*/
+.footer {
+  padding: 20px;
+  background: $noirfooter;
+  color: $blanc;
+  &__logo2 {
+    padding-bottom: 10px;
+    img {
+      filter: invert(1);
+      width: 100px;
+    }
+  }
+  
+  &__containerligne {
+    &__ligne {
+      display: flex;
+      align-items: center;
+      padding-bottom: 5px;
+      
+      a {
+        color: $blanc;
+        text-decoration: none;
+      }
+      
+      &__icone3 {
+        width: 20px;
+        i {
+          font-size: x-small;
+        }
+      }
+    }
+  }
+}
+
+/*TABLETTE & ORDIS*/
+@media screen and (min-width: 768px) and (max-width: 1900px) {
+  .footer {
+    &__logo2 {
+      text-align: center;
+      padding-bottom: 15px;
+    }
+    
+    &__containerligne {
+      display: flex;
+      justify-content: space-between;
+      
+    }
+  }
+}
