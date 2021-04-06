@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ohmyfood</title>
+    <title>Acceuil - ohmyfood</title>
     <link rel="stylesheet" href="SASS/main.css" />
     <script
       src="https://kit.fontawesome.com/2e25423d67.js"
@@ -16,11 +16,17 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
+    <div class="loading">
+      <div class="spinner"> 
+        <i class="fas fa-spinner"></i>
+      </div>
+    </div>  
+
     <header class="headeracceuil">
       <!--START HEADER-->
       <div class="headeracceuil__logo">
@@ -28,187 +34,206 @@
       </div>
     </header>
     <!--END HEADER-->
+    
+    <main> <!--START MAIN-->
 
-    <main>
-      <!--START MAIN-->
-
-      <section class="localisation">
+      <div class="localisation">
         <!--LOCALISATION-->
         <div class="localisation__infos">
           <div class="localisation__infos__iconemap">
             <i class="fas fa-map-marker-alt"></i>
           </div>
-          <div class="localisation__infos__iconemap__lieu">
+          <div class="localisation__infos__lieu">
             <input type="text" placeholder="Paris, Belleville" />
           </div>
         </div>
-      </section>
+      </div>
 
-      <section id="presentation">
+      <div id="presentation">
         <!--PRESENTATION-->
-        <h1>Réservez le menu qui vous convient</h1>
+        <h1>
+          Réservez le menu qui <br />
+          vous convient
+        </h1>
         <p>
           Découvrez des restaurants d'exception, sélectionnés par nos soins.
         </p>
         <div class="boutoncmd">
           <button type="submit">Explorer nos restaurants</button>
         </div>
-      </section>
-
-      <section id="fonctionnement">
+      </div>
+      
+      <div id="fonctionnement">
         <!--FONCTIONNEMENT-->
         <h2>Fonctionnement</h2>
-
+        
         <div class="parent">
-          <div class="parent__unit">
-            <button type="submit">
-              <div class="parent__unit__rond">
-                <p>1</p>
-              </div>
-              <div class="parent__unit__rond__icone2">
-                <i class="fas fa-mobile-alt"></i>
-              </div>
-              <div class="parent__unit__rond__icone2__p">
-                <p>Choisissez un restaurant</p>
-              </div>
-            </button>
+          <div class="parent__button">
+            
+            <div class="parent__button__rond">
+              <p>1</p>
+            </div>
+
+            <div class="parent__button__icone2">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+
+            <div class="parent__button__texte">
+              <p>Choisissez un restaurant</p>
+            </div>
+
           </div>
 
-          <div class="parent__unit">
-            <button type="submit">
-              <div class="parent__unit__rond">
-                <p>2</p>
-              </div>
-              <div class="parent__unit__rond__icone2">
-                <i class="fas fa-list-ul"></i>
-              </div>
-              <div class="parent__unit__rond__icone2__p">
-                <p>Composez votre menu</p>
-              </div>
-            </button>
+          
+          
+          <div class="parent__button">
+            
+            <div class="parent__button__rond">
+              <p>2</p>
+            </div>
+            
+            <div class="parent__button__icone2">
+              <i class="fas fa-list-ul"></i>
+            </div>
+            
+            <div class="parent__button__texte">
+              <p>Composez votre menu</p>
+            </div>
+
+          </div> 
+
+           
+
+          <div class="parent__button">
+            
+            <div class="parent__button__rond">
+              <p>3</p>
+            </div>
+
+            <div class="parent__button__icone2">
+              <i class="fas fa-store"></i>
+            </div>
+
+            <div class="parent__button__texte">
+              <p>Dégustez au restaurant</p>
+            </div> 
           </div>
 
-          <div class="parent__unit">
-            <button type="submit">
-              <div class="parent__unit__rond">
-                <p>3</p>
-              </div>
-              <div class="parent__unit__rond__icone2">
-                <i class="fas fa-store"></i>
-              </div>
-              <div class="parent__unit__rond__icone2__p">
-                <p>Dégustez au restaurant</p>
-              </div>
-            </button>
-          </div>
         </div>
-      </section>
-
-      <section id="restaurants">
+      </div>
+      
+      <div id="restaurants">
         <!--SECTION RESTAURANTS-->
         <h2>Restaurants</h2>
         <div class="allrestau">
+
           <div class="allrestau__carte">
             <a href="lapalettedugout.html">
-              <figure class="allrestau__carte__image">
+
+              <div class="allrestau__carte__image">
                 <img src="images/palettedugout.jpg" alt="La palette du goût" />
                 <h5 class="new">Nouveau</h5>
-              </figure>
-              <figcaption class="allrestau__carte__image__legende">
-                <div class="allrestau__carte__image__legende__titre">
-                  <h4>La palette du goût</h4>
+              </div>
+
+              <div class="allrestau__carte__legende">
+                <div class="allrestau__carte__legende__titre">
+                  <h3>La palette du goût</h3>
                   <p>Ménilmontant</p>
                 </div>
-                <div class="allrestau__carte__image__legende__titre__coeur">
+                <div class="allrestau__carte__legende__coeur">
                   <i class="far fa-heart"></i>
+                
                 </div>
-              </figcaption>
+              </div>
             </a>
           </div>
 
           <div class="allrestau__carte">
             <a href="lanoteenchantee.html">
-              <figure class="allrestau__carte__image">
+              <div class="allrestau__carte__image">
                 <img src="images/noteenchantee.jpg" alt="La note enchantée" />
                 <h5 class="new">Nouveau</h5>
-              </figure>
-              <figcaption class="allrestau__carte__image__legende">
-                <div class="allrestau__carte__image__legende__titre">
-                  <h4>La note enchantée</h4>
+              </div>
+              <div class="allrestau__carte__legende">
+                <div class="allrestau__carte__legende__titre">
+                  <h3>La note enchantée</h3>
                   <p>Charonne</p>
                 </div>
-                <div class="allrestau__carte__image__legende__titre__coeur">
+                <div class="allrestau__carte__legende__coeur">
                   <i class="far fa-heart"></i>
                 </div>
-              </figcaption>
+              </div>
             </a>
           </div>
 
           <div class="allrestau__carte">
             <a href="alafrancaise.html">
-              <figure class="allrestau__carte__image">
+              <div class="allrestau__carte__image">
                 <img src="images/francaise.jpg" alt="A la française" />
-              </figure>
-              <figcaption class="allrestau__carte__image__legende">
+              </div>
+              <div class="allrestau__carte__legende">
                 <div class="allrestau__carte__image__legende__titre">
-                  <h4>À la française</h4>
+                  <h3>À la française</h3>
                   <p>Cité Rouge</p>
                 </div>
-                <div class="allrestau__carte__image__legende__titre__coeur">
+                <div class="allrestau__carte__legende__coeur">
                   <i class="far fa-heart"></i>
                 </div>
-              </figcaption>
+              </div>
             </a>
           </div>
 
           <div class="allrestau__carte">
             <a href="ledelicedessens.html">
-              <figure class="allrestau__carte__image">
+              <div class="allrestau__carte__image">
                 <img src="images/delicedessens.jpg" alt="Le délice des sens" />
-              </figure>
-              <figcaption class="allrestau__carte__image__legende">
-                <div class="allrestau__carte__image__legende__titre">
-                  <h4>Le délice des sens</h4>
+              </div>
+              <div class="allrestau__carte__legende">
+                <div class="allrestau__carte__legende__titre">
+                  <h3>Le délice des sens</h3>
                   <p>Folie-Méricourt</p>
                 </div>
-                <div class="allrestau__carte__image__legende__titre__coeur">
+                <div class="allrestau__carte__legende__coeur">
                   <i class="far fa-heart"></i>
                 </div>
-              </figcaption>
+              </div>
             </a>
           </div>
         </div>
-      </section>
+      </div>
     </main>
     <!--END MAIN-->
-
     <footer class="footer">
       <!--START FOOTER-->
+      
       <div class="footer__logo2">
         <img src="images/ohmyfood@2x.svg" alt="logoohmyfood" />
       </div>
-      <div class="footer__logo2__containerligne">
-        <div class="footer__logo2__containerligne__ligne">
-          <div class="footer__logo2__containerligne__ligne__icone3">
+      
+      <div class="footer__containerligne">
+        <div class="footer__containerligne__ligne">
+          <div class="footer__containerligne__ligne__icone3">
             <i class="fas fa-utensils"></i>
           </div>
           <p>Proposer un restaurant</p>
         </div>
-
-        <div class="footer__logo2__containerligne__ligne">
-          <div class="footer__logo2__containerligne__ligne__icone3">
+        
+        <div class="footer__containerligne__ligne">
+          <div class="footer__containerligne__ligne__icone3">
             <i class="fas fa-hands-helping"></i>
           </div>
           <p>Devenir partenaire</p>
         </div>
-        <div class="footer__logo2__containerligne__ligne">
+        
+        <div class="footer__containerligne__ligne">
           <p>Mentions légales</p>
         </div>
-
-        <div class="footer__logo2__containerligne__ligne">
+        
+        <div class="footer__containerligne__ligne">
           <a href="mailto:nullepart@mozilla.org">Contact</a>
         </div>
       </div>
     </footer>
+
   </body>
 </html>
