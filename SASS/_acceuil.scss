@@ -1,0 +1,292 @@
+/*HEADER PAGE ACCEUIL*/
+.headeracceuil {
+  box-shadow: 0.2rem 0.2rem 0.3em #d7d5d5;
+  position: relative;
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    background-color: $blanc;
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+    img {
+      width: 160px;
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1900px) {
+  .headeracceuil {
+    &__logo {
+      img {
+        width: 20%;
+      }
+    }
+  }
+}
+
+/*LOCALISATION PAGE ACCEUIL*/
+.localisation {
+  background-color: $grisfonce;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  &__infos {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    width: 160px;
+    input {
+      font-size: medium;
+      background-color: $grisfonce;
+      border: none;
+      padding-left: 10px;
+
+      &::placeholder {
+        color: $noir;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1900px) {
+  .localisation {
+    &__infos {
+      justify-content: center;
+
+      &__iconemap {
+        i {
+          font-size: larger;
+        }
+      }
+
+      &__lieu {
+        input {
+          font-size: larger;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+/*PRESENTATION PAGE ACCEUIL*/
+#presentation {
+  padding: 40px;
+  text-align: center;
+  background-color: $grisclair;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  p {
+    padding-top: 10px;
+    font-weight: 300;
+  }
+}
+
+.boutoncmd {
+  margin-top: 20px;
+  background: linear-gradient(to bottom right, $rose, $violet);
+  color: $blanc;
+  border: none;
+  height: 50px;
+  width: 215px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  &:hover {
+    opacity: 0.8;
+  }
+
+  button {
+    background: none;
+    color: $blanc;
+    font-size: medium;
+    border: none;
+    box-shadow: 0.25rem 0.25rem 10px #b9b7b7;
+    border-radius: 30px;
+    width: inherit;
+    &:hover {
+      box-shadow: 0.25rem 0.25rem 10px #828181;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1900px) {
+  #presentation {
+    font-size: larger;
+  }
+  .boutoncmd {
+    width: 260px;
+
+    button {
+      font-size: large;
+    }
+  }
+}
+
+/*FONCTIONNEMENT PAGE ACCEUIL*/
+
+#fonctionnement {
+  background-color: $blanc;
+  padding-left: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  h2 {
+    margin-bottom: 20px;
+  }
+}
+
+.parent {
+  display: inline;
+
+  &__button {
+    background: $grisclair;
+    box-shadow: 0.2rem 0.2rem 0.4rem #d7d5d5;
+    border: none;
+    border-radius: 20px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    height: 65px;
+    font-size: medium;
+    margin-bottom: 20px;
+    &:hover {
+      background: $violetclair;
+      i {
+        color: $violet;
+      }
+    }
+
+    &__rond {
+      background-color: $violet;
+      width: 20px;
+      text-align: center;
+      height: 20px;
+      border-radius: 30px;
+      color: $blanc;
+      margin-right: 25px;
+      margin-left: -8px;
+      p {
+        font-size: small;
+        padding-top: 2px;
+      }
+    }
+
+    &__icone2 {
+      color: $gris;
+      margin-right: 20px;
+      font-size: large;
+    }
+
+    &__texte {
+      padding-left: 10px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1900px) {
+  #fonctionnement {
+    padding-right: 20px;
+  }
+  .parent {
+    flex-direction: row;
+    justify-content: space-between;
+    &__unit {
+      width: 30%;
+      button {
+        width: 100%;
+        padding-right: 20px;
+      }
+    }
+  }
+}
+
+/*RESTAUS PAGE ACCEUIL*/
+#restaurants {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: $grisfonce;
+  h2 {
+    margin-bottom: 20px;
+    padding-left: 20px;
+  }
+}
+
+.allrestau {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
+  &__carte {
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0.2rem 0.2rem 1rem #d7d5d5;
+    border-radius: 20px;
+    a {
+      text-decoration-line: none;
+      color: $noir;
+    }
+    &__image {
+      display: FLEX;
+      position: relative;
+      flex-direction: row-reverse;
+      img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 20px 20px 0px 0px;
+      }
+      h5 {
+        position: absolute;
+        margin-right: 20px;
+        margin-top: 20px;
+        background: $vertclair;
+        color: $vertfonce;
+        text-align: CENTER;
+        padding: 7px;
+      }
+    }
+
+    &__legende {
+      display: flex;
+      justify-content: space-between;
+      background: $blanc;
+      padding: 10px;
+      border-radius: 0px 0px 20px 20px;
+      &__titre {
+        h3 {
+          padding-bottom: 5px;
+        }
+      }
+
+      &__coeur {
+        i {
+          font-size: x-large;
+          transition: color 0.35s ease-in-out;
+          &:hover {
+            cursor: pointer;
+            color: $violet;
+            font-weight: bold;
+            display: block;
+            background: -webkit-linear-gradient($violet, $rose);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1900px) {
+  .allrestau {
+    justify-content: space-between;
+    &__carte {
+      flex: 0 0 47%;
+    }
+  }
+}
