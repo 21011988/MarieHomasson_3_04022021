@@ -1,0 +1,47 @@
+/*ANIMATIONS UNITES PAGE MENUS*/
+
+.restau {
+  &__menuall {
+    &__groupe {
+      &__unite {
+        animation: uniteaction 0.2s;
+        animation-duration: 2s;
+      }
+    }
+  }
+}
+
+@keyframes uniteaction {
+  0% {
+    opacity: 0;
+    margin-bottom: 20px;
+  }
+  100% {
+    opacity: 1;
+    margin-bottom: 10px;
+  }
+}
+
+/*ANIMATIONS CHECK VERT PAGE MENUS*/
+
+.restau {
+  &__menuall {
+    &__groupe {
+      &__unite {
+        &:hover &__check {
+          cursor: pointer;
+          opacity: 1;
+          width: 60px;
+          height: stretch;
+          transition: width 0.75s, opacity 0.75s;
+          i {
+            transform: rotate(180deg);
+            transition-duration: 0.75s;
+          }
+        }  
+      }
+    }
+  }
+}
+
+
