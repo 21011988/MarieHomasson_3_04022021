@@ -1,0 +1,212 @@
+/*HEADER PAGE MENUS*/
+.headermenu {
+  &__retour {
+    position: absolute;
+    padding: 25px;
+    i {
+      color: $noir;
+      font-size: larger;
+    }
+
+    &__logo {
+      display: flex;
+      justify-content: center;
+      background-color: $blanc;
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+      img {
+        width: 160px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1900px) {
+  .headermenu {
+    &__retour {
+      i {
+        font-size: x-large;
+      }
+    }
+
+    &__logo {
+      img {
+        width: 20%;
+      }
+    }
+  }
+}
+/*IMAGE PAGE MENUS*/
+#imagerestau {
+  width: 100%;
+  height: 300px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1900px) {
+  #imagerestau {
+    height: 32em;
+
+    img {
+      object-fit: cover;
+    }
+  }
+}
+
+/*RESTAU NOM*/
+.restau {
+  background-color: $grisfonce;
+  padding: 20px;
+  position: relative;
+  top: -40px;
+  border-radius: 30px 30px 0px 0px;
+
+  &__restaunom {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__titre {
+      h2 {
+        font-family: "Shrikhand", cursive;
+      }
+    }
+
+    &__coeur {
+      padding-right: 10px;
+      i {
+        font-size: x-large;
+      }
+    }
+  }
+}
+
+/*MENUS RESTAU*/
+.restau {
+  &__menuall {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__groupe {
+      &__titre {
+        margin-bottom: 20px;
+        margin-top: 20px;
+
+        p {
+          text-transform: uppercase;
+          width: 40px;
+          border-bottom: 2px solid #99e2d0;
+        }
+      }
+
+      &__unite {
+        box-shadow: 0.2rem 0.2rem 1rem #d7d5d5;
+        background: $blanc;
+        border-radius: 20px;
+        padding-left: 10px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        &__texte {
+          flex: 1;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+
+          p {
+            font-size: smaller;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+          }
+
+          h4 {
+            font-size: 15px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+          }
+        }
+
+        &__prix {
+          padding-right: 10px;
+          padding-top: 10px;
+          font-weight: bold;
+        }
+
+        &__check {
+          background: $vertclair;
+          width: 0;
+          opacity: 0;
+          border-radius: 0 10px 10px 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &__icone {
+            background: white;
+            border-radius: 100px;
+            display: flex;
+            width: 25px;
+            height: 25px;
+            justify-content: center;
+            align-items: center;
+            transform: rotate(180deg);
+            i {
+              color: $vertclair;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1900px) {
+  .restau {
+    &__menuall {
+      flex-direction: revert;
+
+      &__groupe {
+        flex: 0 0 33%;
+      }
+    }
+  }
+}
+
+/*BOUTON COMMANDE RESTAU*/
+.restau {
+  &__commande {
+    &__boutoncmd {
+      @extend .boutoncmd;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1900px) {
+  .restau {
+    &__commande {
+      &__boutoncmd {
+        .boutoncmd {
+          width: 260px;
+          button {
+            font-size: larger;
+          }
+        }
+      }
+    }
+  }
+}
