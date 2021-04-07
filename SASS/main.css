@@ -15,7 +15,11 @@ footer {
 }
 
 /*VARIABLES*/
-/*HEADER PAGE ACCEUIL*/
+/**
+ * /*HEADER PAGE ACCEUIL
+ *
+ * @format
+ */
 .headeracceuil {
   -webkit-box-shadow: 0.2rem 0.2rem 0.3em #d7d5d5;
           box-shadow: 0.2rem 0.2rem 0.3em #d7d5d5;
@@ -719,7 +723,11 @@ footer {
           transition-duration: 0.75s;
 }
 
-/*ANIMATION LOADER*/
+/**
+ * /*ANIMATION LOADER
+ *
+ * @format
+ */
 .loading {
   background-color: white;
   height: 100%;
