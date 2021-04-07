@@ -1,4 +1,4 @@
-/*ANIMATION LOADER*/ 
+/*ANIMATION LOADER*/
 
 .loading {
   background-color: white;
@@ -10,7 +10,7 @@
   position: fixed;
   z-index: 1;
   animation-name: voir;
-  animation-delay: 2s ;
+  animation-delay: 2s;
   animation-duration: 3s;
   animation-fill-mode: forwards;
 
@@ -23,57 +23,51 @@
   }
 }
 
-.spinner{
+.spinner {
   transform: rotate(0deg);
   animation: tourne 3s linear infinite reverse;
   animation-delay: 0.2s;
-
 }
-
-
 
 @keyframes couleur {
   0% {
     color: $rose;
   }
 
-  50%{
+  50% {
     color: $vertclair;
   }
 
   100% {
-   color: $violet;
+    color: $violet;
   }
 }
 
 @keyframes voir {
-  0%{
+  0% {
     visibility: visible;
     opacity: 1;
   }
-  100%{
+  100% {
     visibility: hidden;
     opacity: 0;
   }
 }
 
-@keyframes tourne{
+@keyframes tourne {
   0% {
     transform: rotate(0);
   }
-  25%{
+  25% {
     transform: rotate(90deg);
   }
-  50%{
+  50% {
     transform: rotate(180deg);
   }
-  75%{
+  75% {
     transform: rotate(270deg);
   }
   100% {
     transform: rotate(360deg);
   }
 }
-
-
-
