@@ -1,4 +1,9 @@
-/*HEADER PAGE MENUS*/
+/**
+ * /*HEADER PAGE MENUS
+ *
+ * @format
+ */
+
 .headermenu {
   &__retour {
     position: absolute;
@@ -142,6 +147,7 @@
 
         &__prix {
           padding-right: 10px;
+          padding-left: 5px;
           padding-top: 10px;
           font-weight: bold;
         }
