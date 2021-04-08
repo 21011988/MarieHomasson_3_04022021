@@ -1,4 +1,8 @@
-/*ANIMATIONS UNITES PAGE MENUS*/
+/**
+ * /*ANIMATIONS UNITES PAGE MENUS
+ *
+ * @format
+ */
 
 .restau {
   &__menuall {
@@ -32,16 +36,14 @@
           cursor: pointer;
           opacity: 1;
           width: 60px;
-          height: stretch;
+          height: inherit;
           transition: width 0.75s, opacity 0.75s;
           i {
             transform: rotate(180deg);
             transition-duration: 0.75s;
           }
-        }  
+        }
       }
     }
   }
 }
-
-
