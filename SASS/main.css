@@ -1,4 +1,4 @@
-/*GLOBAL STYLESs*/
+/*GLOBAL STYLES*/
 main {
   font-family: "Roboto", sans-serif;
   color: black;
@@ -352,6 +352,10 @@ footer {
   border-radius: 0px 0px 20px 20px;
 }
 
+.allrestau__carte__legende__titre {
+  padding-left: 5px;
+}
+
 .allrestau__carte__legende__titre h3 {
   padding-bottom: 5px;
 }
@@ -385,7 +389,11 @@ footer {
   }
 }
 
-/*HEADER PAGE MENUS*/
+/**
+ * /*HEADER PAGE MENUS
+ *
+ * @format
+ */
 .headermenu__retour {
   position: absolute;
   padding: 25px;
@@ -547,6 +555,7 @@ footer {
 
 .restau__menuall__groupe__unite__prix {
   padding-right: 10px;
+  padding-left: 5px;
   padding-top: 10px;
   font-weight: bold;
 }
@@ -674,7 +683,11 @@ footer {
   }
 }
 
-/*ANIMATIONS UNITES PAGE MENUS*/
+/**
+ * /*ANIMATIONS UNITES PAGE MENUS
+ *
+ * @format
+ */
 .restau__menuall__groupe__unite {
   -webkit-animation: uniteaction 0.2s;
           animation: uniteaction 0.2s;
@@ -709,9 +722,7 @@ footer {
   cursor: pointer;
   opacity: 1;
   width: 60px;
-  height: -webkit-fill-available;
-  height: -moz-available;
-  height: stretch;
+  height: inherit;
   -webkit-transition: width 0.75s, opacity 0.75s;
   transition: width 0.75s, opacity 0.75s;
 }
@@ -723,11 +734,7 @@ footer {
           transition-duration: 0.75s;
 }
 
-/**
- * /*ANIMATION LOADER
- *
- * @format
- */
+/*ANIMATION LOADER*/
 .loading {
   background-color: white;
   height: 100%;
