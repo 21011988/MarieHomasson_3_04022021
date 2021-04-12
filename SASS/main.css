@@ -34,8 +34,8 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: white;
-  padding-top: 20px;
-  padding-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .headeracceuil__logo img {
@@ -51,7 +51,7 @@ footer {
 /*LOCALISATION PAGE ACCEUIL*/
 .localisation {
   background-color: #eaeaea;
-  height: 45px;
+  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,7 +116,7 @@ footer {
 
 /*PRESENTATION PAGE ACCEUIL*/
 #presentation {
-  padding: 40px;
+  padding: 30px 20px 30px 20px;
   text-align: center;
   background-color: #f6f6f6;
   display: -webkit-box;
@@ -132,7 +132,7 @@ footer {
 }
 
 #presentation p {
-  padding-top: 10px;
+  padding-top: 15px;
   font-weight: 300;
 }
 
@@ -166,6 +166,7 @@ footer {
           box-shadow: 0.25rem 0.25rem 10px #b9b7b7;
   border-radius: 30px;
   width: inherit;
+  cursor: pointer;
 }
 
 .boutoncmd button:hover, .restau__commande__boutoncmd button:hover {
@@ -217,6 +218,7 @@ footer {
   height: 65px;
   font-size: medium;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .parent__button:hover {
@@ -251,6 +253,7 @@ footer {
 
 .parent__button__texte {
   padding-left: 10px;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1900px) {
@@ -283,7 +286,6 @@ footer {
 }
 
 #restaurants h2 {
-  margin-bottom: 20px;
   padding-left: 20px;
 }
 
@@ -304,7 +306,7 @@ footer {
   margin-bottom: 20px;
   -webkit-box-shadow: 0.2rem 0.2rem 1rem #d7d5d5;
           box-shadow: 0.2rem 0.2rem 1rem #d7d5d5;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .allrestau__carte a {
@@ -327,7 +329,7 @@ footer {
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 10px 10px 0px 0px;
 }
 
 .allrestau__carte__image h5 {
@@ -336,8 +338,8 @@ footer {
   margin-top: 20px;
   background: #99e2d0;
   color: #208e6f;
-  text-align: CENTER;
-  padding: 7px;
+  padding: 6px 12px 6px 12px;
+  border-radius: 2px;
 }
 
 .allrestau__carte__legende {
@@ -349,11 +351,11 @@ footer {
           justify-content: space-between;
   background: white;
   padding: 10px;
-  border-radius: 0px 0px 20px 20px;
+  border-radius: 0px 0px 10px 10px;
 }
 
 .allrestau__carte__legende__titre {
-  padding-left: 5px;
+  padding: 5px 0px 5px 5px;
 }
 
 .allrestau__carte__legende__titre h3 {
@@ -361,6 +363,7 @@ footer {
 }
 
 .allrestau__carte__legende__coeur i {
+  padding: 5px 5px 0px 5px;
   font-size: x-large;
   -webkit-transition: color 0.35s ease-in-out;
   transition: color 0.35s ease-in-out;
@@ -396,7 +399,7 @@ footer {
  */
 .headermenu__retour {
   position: absolute;
-  padding: 25px;
+  padding: 20px;
 }
 
 .headermenu__retour i {
@@ -412,8 +415,8 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: white;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .headermenu__retour__logo img {
@@ -528,6 +531,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .restau__menuall__groupe__unite__texte {
@@ -551,6 +555,7 @@ footer {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  padding-bottom: 5px;
 }
 
 .restau__menuall__groupe__unite__prix {
@@ -582,8 +587,8 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -596,6 +601,7 @@ footer {
 
 .restau__menuall__groupe__unite__check__icone i {
   color: #99e2d0;
+  font-size: small;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1900px) {
