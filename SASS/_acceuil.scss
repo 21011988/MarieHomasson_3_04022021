@@ -12,8 +12,8 @@
     display: flex;
     justify-content: center;
     background-color: $blanc;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 
     img {
       width: 160px;
@@ -33,7 +33,7 @@
 /*LOCALISATION PAGE ACCEUIL*/
 .localisation {
   background-color: $grisfonce;
-  height: 45px;
+  height: 50px;
   display: flex;
   justify-content: center;
   &__infos {
@@ -79,7 +79,7 @@
 
 /*PRESENTATION PAGE ACCEUIL*/
 #presentation {
-  padding: 40px;
+  padding: 30px 20px 30px 20px;
   text-align: center;
   background-color: $grisclair;
   display: flex;
@@ -87,7 +87,7 @@
   align-items: center;
 
   p {
-    padding-top: 10px;
+    padding-top: 15px;
     font-weight: 300;
   }
 }
@@ -114,6 +114,7 @@
     box-shadow: 0.25rem 0.25rem 10px #b9b7b7;
     border-radius: 30px;
     width: inherit;
+    cursor: pointer;
     &:hover {
       box-shadow: 0.25rem 0.25rem 10px #828181;
     }
@@ -159,6 +160,7 @@
     height: 65px;
     font-size: medium;
     margin-bottom: 20px;
+    cursor: pointer;
     &:hover {
       background: $violetclair;
       i {
@@ -189,6 +191,7 @@
 
     &__texte {
       padding-left: 10px;
+      font-weight: bold;
     }
   }
 }
@@ -216,7 +219,6 @@
   padding-bottom: 40px;
   background-color: $grisfonce;
   h2 {
-    margin-bottom: 20px;
     padding-left: 20px;
   }
 }
@@ -230,7 +232,7 @@
     width: 100%;
     margin-bottom: 20px;
     box-shadow: 0.2rem 0.2rem 1rem #d7d5d5;
-    border-radius: 20px;
+    border-radius: 10px;
     a {
       text-decoration-line: none;
       color: $noir;
@@ -243,7 +245,7 @@
         width: 100%;
         height: 200px;
         object-fit: cover;
-        border-radius: 20px 20px 0px 0px;
+        border-radius: 10px 10px 0px 0px;
       }
       h5 {
         position: absolute;
@@ -251,8 +253,8 @@
         margin-top: 20px;
         background: $vertclair;
         color: $vertfonce;
-        text-align: CENTER;
-        padding: 7px;
+        padding: 6px 12px 6px 12px;
+        border-radius: 2px;
       }
     }
 
@@ -261,9 +263,9 @@
       justify-content: space-between;
       background: $blanc;
       padding: 10px;
-      border-radius: 0px 0px 20px 20px;
+      border-radius: 0px 0px 10px 10px;
       &__titre {
-        padding-left: 5px;
+        padding: 5px 0px 5px 5px;
         h3 {
           padding-bottom: 5px;
         }
@@ -271,6 +273,7 @@
 
       &__coeur {
         i {
+          padding: 5px 5px 0px 5px;
           font-size: x-large;
           transition: color 0.35s ease-in-out;
           &:hover {
