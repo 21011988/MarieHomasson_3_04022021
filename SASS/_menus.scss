@@ -185,7 +185,7 @@
 @media screen and (min-width: 1024px) and (max-width: 1900px) {
   .restau {
     &__menuall {
-      flex-direction: revert;
+      flex-direction: inherit;
 
       &__groupe {
         flex: 0 0 33%;

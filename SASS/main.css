@@ -606,10 +606,10 @@ footer {
 
 @media screen and (min-width: 1024px) and (max-width: 1900px) {
   .restau__menuall {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: revert;
-            flex-direction: revert;
+    -webkit-box-orient: inherit;
+    -webkit-box-direction: inherit;
+        -ms-flex-direction: inherit;
+            flex-direction: inherit;
   }
   .restau__menuall__groupe {
     -webkit-box-flex: 0;
